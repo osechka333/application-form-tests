@@ -1,0 +1,21 @@
+{
+  "name": "application-form-tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test-chromium": "npx playwright test --project chromium",
+    "test-firefox": "npx playwright test --project firefox",
+    "test-webkit": "npx playwright test --project webkit",
+    "codegen": "npx playwright codegen https://qa-task.redvike.rocks/",
+    "debug": "set PWDEBUG=1&& npx playwright test"
+  },
+
+  "keywords": [],
+  "author": "olha pokolenko",
+  "license": "ISC",
+
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.12"
+  }
+}
